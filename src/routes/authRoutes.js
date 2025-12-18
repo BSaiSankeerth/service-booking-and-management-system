@@ -10,10 +10,9 @@ const router = express.Router();
 router.post("/register", register);
 router.post("/login", login);
 
-// only logged-in users can logout
+// only loggedin users can logout
 router.post("/logout", authMiddleware, logout);
 
-// example test routes
 router.get(
   "/user-dashboard",
   authMiddleware,
