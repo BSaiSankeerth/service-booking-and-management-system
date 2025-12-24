@@ -2,12 +2,10 @@
   "name": "project",
   "version": "1.0.0",
   "type": "module",
-
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-
   "dependencies": {
     "axios": "^1.13.2",
     "bcryptjs": "^3.0.3",
@@ -18,9 +16,9 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.0.1",
     "morgan": "^1.10.1",
+    "nodemailer": "^7.0.12",
     "uuid": "^13.0.0"
   },
-
   "devDependencies": {
     "nodemon": "^3.1.11"
   }

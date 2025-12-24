@@ -1,5 +1,5 @@
 //import partnerProfilemodel from "../models/partnerProfilemodel";
- import PartnerProfile from "../models/partnerProfilemodel.js";
+ import PartnerProfile from "../models/partnerProfile.js";
 
 //create and ubdate
  export const createOrUpdateProfile=async(req,res)=>

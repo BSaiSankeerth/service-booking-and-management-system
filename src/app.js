@@ -2,6 +2,11 @@ import express from "express";
 import authRoutes from "./routes/authRoutes.js";
 import partnerRoutes from "./routes/partnerRoutes.js";
 import serviceRoutes from "./routes/serviceRoutes.js";
+import bookingRoutes from "./routes/bookingRoutes.js";
+import partnerAvailabilityRoutes from "./routes/partnerAvailabilityRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
+
+
 
 
 const app = express();
@@ -19,6 +24,9 @@ app.get("/", (req, res) => {
 
 app.use("/api/partner", partnerRoutes);
 app.use("/api/services", serviceRoutes);
+app.use("/api/bookings", bookingRoutes);
+app.use("/api/partner/availability", partnerAvailabilityRoutes);
+app.use("/api/admin", adminRoutes);
 
 
 export default app;
