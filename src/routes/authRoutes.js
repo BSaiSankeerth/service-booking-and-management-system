@@ -10,6 +10,10 @@ const router = express.Router();
 router.post("/register", register);
 router.post("/login", login);
 
+router.get("/test", (req, res) => {
+  res.json({ message: "Backend Connected Successfully!" });
+});
+
 // only loggedin users can logout
 router.post("/logout", authMiddleware, logout);
 
